@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    <ImageView
+        android:id="@+id/goods_item_photo"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:background="@color/colorBlackGery"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/goods_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/colorBlack"
+        android:paddingLeft="20dp"
+        android:text="Apple IPad 128G 金色"
+        android:layout_toRightOf="@id/goods_item_photo"/>
+
+    <TextView
+        android:id="@+id/goods_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textColor="@color/colorRed"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="2999.00"
+        android:drawableLeft="@drawable/rmb"
+        android:layout_below="@id/goods_item_name"
+        android:layout_toRightOf="@id/goods_item_photo"
+        />
+
+    <TextView
+        android:id="@+id/goods_item_sales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorBlackGery"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:text="62万+条评价 99%好评"
+        android:layout_below="@id/goods_item_price"
+        android:layout_toRightOf="@id/goods_item_photo"
+        />
+    <TextView
+        android:id="@+id/goods_item_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/colorBlackGery"
+        android:paddingLeft="20dp"
+        android:paddingTop="0dp"
+        android:text="Apple产品京东自营旗舰店"
+        android:layout_below="@id/goods_item_sales"
+        android:layout_toRightOf="@id/goods_item_photo"
+        />
+
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/goods_item_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:src="@drawable/buyit" />
+</RelativeLayout>
